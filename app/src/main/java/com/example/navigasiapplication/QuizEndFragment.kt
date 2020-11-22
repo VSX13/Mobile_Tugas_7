@@ -17,7 +17,7 @@ class QuizEndFragment : Fragment() {
             inflater, R.layout.fragment_quiz_end, container, false)
         binding.sorryTryAgainButton.setOnClickListener { view: View ->
             view.findNavController()
-                .navigate(R.id.action_quizendFragment_to_titleFragment)
+                .navigate(R.id.action_quizendFragment_to_quizFragment)
         }
         return binding.root
     }

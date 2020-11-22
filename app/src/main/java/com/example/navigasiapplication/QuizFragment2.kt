@@ -26,7 +26,7 @@ class QuizFragment2 : Fragment() {
                 }
                 if (answerIndex == 2) {
                     view.findNavController()
-                        .navigate(R.id.action_quizFragment2_to_quizFinishFragment)
+                        .navigate(R.id.action_quizFragment2_to_quizFragment3)
                 } else {
                     view.findNavController()
                         .navigate(R.id.action_quizFragment2_to_quizendFragment2)

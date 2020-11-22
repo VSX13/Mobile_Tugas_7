@@ -7,7 +7,7 @@
     <fragment
         android:id="@+id/titleFragment"
         android:name="com.example.navigasiapplication.TittleFragment"
-        android:label="Intro"
+        android:label="Pop Quiz"
         tools:layout="@layout/fragment_tittle">
         <action
             android:id="@+id/action_titleFragment_to_quizFragment"
@@ -17,7 +17,7 @@
     <fragment
         android:id="@+id/quizFragment"
         android:name="com.example.navigasiapplication.QuizFragment"
-        android:label="Quiz"
+        android:label="Quiz 1"
         tools:layout="@layout/fragment_quiz">
         <action
             android:id="@+id/action_quizFragment_to_quizendFragment"
@@ -30,29 +30,46 @@
     </fragment>
 
     <fragment
-        android:id="@+id/quizFragment2"
-        android:name="com.example.navigasiapplication.QuizFragment2"
-        android:label="Quiz2"
-        tools:layout="@layout/fragment_quiz2">
+    android:id="@+id/quizFragment2"
+    android:name="com.example.navigasiapplication.QuizFragment2"
+    android:label="Quiz 2"
+    tools:layout="@layout/fragment_quiz2">
+    <action
+        android:id="@+id/action_quizFragment2_to_quizendFragment2"
+        app:destination="@id/quizendFragment2"
+        app:popUpTo="@id/quizFragment2"
+        app:popUpToInclusive="true"/>
+    <action
+        android:id="@+id/action_quizFragment2_to_quizFragment3"
+        app:destination="@id/quizFragment3"
+        app:popUpTo="@+id/quizFragment3"
+        app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/quizFragment3"
+        android:name="com.example.navigasiapplication.QuizFragment3"
+        android:label="Quiz 3"
+        tools:layout="@layout/fragment_quiz3">
         <action
-            android:id="@+id/action_quizFragment2_to_quizendFragment2"
-            app:destination="@id/quizendFragment2"
-            app:popUpTo="@id/quizFragment2"
+            android:id="@+id/action_quizFragment3_to_quizendFragment3"
+            app:destination="@id/quizendFragment3"
+            app:popUpTo="@id/quizFragment3"
             app:popUpToInclusive="true"/>
         <action
-            android:id="@+id/action_quizFragment2_to_quizFinishFragment"
+            android:id="@+id/action_quizFragment3_to_quizFinishFragment"
             app:destination="@id/quizFinishFragment"
-            app:popUpTo="@+id/quizFragment2"
+            app:popUpTo="@+id/quizFragment3"
             app:popUpToInclusive="true" />
     </fragment>
 
     <fragment
         android:id="@+id/quizendFragment"
         android:name="com.example.navigasiapplication.QuizEndFragment"
-        android:label="Quiz Failed"
+        android:label="Quiz Failed 1"
         tools:layout="@layout/fragment_quiz_end">
         <action
-            android:id="@+id/action_quizendFragment_to_titleFragment"
+            android:id="@+id/action_quizendFragment_to_quizFragment"
             app:destination="@id/quizFragment"
             app:popUpTo="@id/titleFragment" />
     </fragment>
@@ -65,6 +82,17 @@
         <action
             android:id="@+id/action_quizendFragment2_to_titleFragment"
             app:destination="@id/quizFragment2"
+            app:popUpTo="@id/titleFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/quizendFragment3"
+        android:name="com.example.navigasiapplication.QuizEndFragment3"
+        android:label="Quiz Failed 3"
+        tools:layout="@layout/fragment_quiz_end3">
+        <action
+            android:id="@+id/action_quizendFragment3_to_titleFragment"
+            app:destination="@id/quizFragment3"
             app:popUpTo="@id/titleFragment" />
     </fragment>
 
