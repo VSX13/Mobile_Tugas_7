@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="vertical_margin">16dp</dimen>
+    <dimen name="horizontal_margin">8dp</dimen>
+    <dimen name="button_padding">16dp</dimen>
+    <dimen name="button_text_size">18sp</dimen>
+    <dimen name="pertanyaan_horizontal_margin">17dp</dimen>
+    <dimen name="pertanyaan_vertical_margin">8dp</dimen>
+    <dimen name="jawaban_text_size">18sp</dimen>
+    <dimen name="pertanyaan_text_size">30dp</dimen>
+    <dimen name="gambar_header_height">192dp</dimen>
+    <dimen name="the_quiz_end_height">350dp</dimen>
+</resources>

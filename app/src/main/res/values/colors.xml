@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <color name="colorPrimary">#5D04FB</color>
+        <color name="colorPrimaryDark">#00028E</color>
+        <color name="colorAccent">#660277</color>
+        <color name="quizFinishDark">#006E04</color>
+        <color name="quizFinishBackground">#00CA38</color>
+        <color name="quizEndBackground">#F40202</color>
+</resources>

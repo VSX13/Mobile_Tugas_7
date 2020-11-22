@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.navigation.InQuiz2">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/frameLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/submitButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/pertanyaan_horizontal_margin"
+                android:layout_marginTop="@dimen/vertical_margin"
+                android:layout_marginEnd="@dimen/pertanyaan_horizontal_margin"
+                android:text="@string/next_button"
+                android:textSize="@dimen/button_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pertanyaanRadioGroup2" />
+
+            <ImageView
+                android:id="@+id/quizImage"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/gambar_header_height"
+                android:layout_marginStart="@dimen/horizontal_margin"
+                android:layout_marginTop="@dimen/vertical_margin"
+                android:layout_marginEnd="@dimen/horizontal_margin"
+                android:layout_marginBottom="@dimen/vertical_margin"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toTopOf="@+id/questionText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed"
+                app:srcCompat="@drawable/android_category_simple2" />
+
+            <RadioGroup
+                android:id="@+id/pertanyaanRadioGroup2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/pertanyaan_horizontal_margin"
+                android:layout_marginTop="@dimen/vertical_margin"
+                android:layout_marginEnd="@dimen/pertanyaan_horizontal_margin"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/questionText2">
+                <RadioButton
+                    android:id="@+id/firstAnswerP2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/pertanyaan_vertical_margin"
+                    android:checked="true"
+                    android:text="RA. Kartini"
+                    android:textSize="@dimen/jawaban_text_size" />
+                <RadioButton
+                    android:id="@+id/secondAnswerP2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/pertanyaan_vertical_margin"
+                    android:text="Ki Hajar Dewantara"
+                    android:textSize="@dimen/jawaban_text_size" />
+                <RadioButton
+                    android:id="@+id/thirdAnswerP2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/pertanyaan_vertical_margin"
+                    android:text="W.R. Supratman"
+                    android:textSize="@dimen/jawaban_text_size" />
+                <RadioButton
+                    android:id="@+id/fourthAnswerP2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ahmad Yani"
+                    android:textSize="@dimen/jawaban_text_size" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/questionText2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/pertanyaan_horizontal_margin"
+                android:layout_marginTop="@dimen/vertical_margin"
+                android:layout_marginEnd="@dimen/pertanyaan_horizontal_margin"
+                android:layout_marginBottom="@dimen/vertical_margin"
+                android:fontFamily="sans-serif"
+                android:text="Siapakah pencipta lagu Indonesia Raya?"
+                android:textSize="@dimen/pertanyaan_text_size"
+                android:textStyle="bold"
+                android:typeface="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/quizImage" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Aplikasi Quiz</string>
+    <string name="the_quiz_end">The Quiz End</string>
+    <string name="sorry_try_again">Try Again?</string>
+    <string name="android_quiz">Android Quiz</string>
+    <string name="next_button">Next</string>
+    <string name="finish">Good Job You Did It!</string>
+</resources>
