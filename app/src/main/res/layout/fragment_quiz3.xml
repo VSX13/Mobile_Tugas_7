@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.navigation.InQuiz3">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/frameLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/submitButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/pertanyaan_horizontal_margin"
+                android:layout_marginTop="@dimen/vertical_margin"
+                android:layout_marginEnd="@dimen/pertanyaan_horizontal_margin"
+                android:text="@string/next_button"
+                android:textSize="@dimen/button_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pertanyaanRadioGroup3" />
+
+            <ImageView
+                android:id="@+id/quizImage3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/gambar_header_height"
+                android:layout_marginStart="@dimen/horizontal_margin"
+                android:layout_marginTop="@dimen/vertical_margin"
+                android:layout_marginEnd="@dimen/horizontal_margin"
+                android:layout_marginBottom="@dimen/vertical_margin"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toTopOf="@+id/questionText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed"
+                app:srcCompat="@drawable/android_category_simple3" />
+
+            <RadioGroup
+                android:id="@+id/pertanyaanRadioGroup3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/pertanyaan_horizontal_margin"
+                android:layout_marginTop="@dimen/vertical_margin"
+                android:layout_marginEnd="@dimen/pertanyaan_horizontal_margin"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/questionText3">
+                <RadioButton
+                    android:id="@+id/firstAnswerP3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/pertanyaan_vertical_margin"
+                    android:checked="true"
+                    android:text="Bambang Pamungkas"
+                    android:textSize="@dimen/jawaban_text_size" />
+                <RadioButton
+                    android:id="@+id/secondAnswerP3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/pertanyaan_vertical_margin"
+                    android:text="Ricky Yacob"
+                    android:textSize="@dimen/jawaban_text_size" />
+                <RadioButton
+                    android:id="@+id/thirdAnswerP3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/pertanyaan_vertical_margin"
+                    android:text="Irfan Bachdim"
+                    android:textSize="@dimen/jawaban_text_size" />
+                <RadioButton
+                    android:id="@+id/fourthAnswerP3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Andik Vermansah"
+                    android:textSize="@dimen/jawaban_text_size" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/questionText3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/pertanyaan_horizontal_margin"
+                android:layout_marginTop="@dimen/vertical_margin"
+                android:layout_marginEnd="@dimen/pertanyaan_horizontal_margin"
+                android:layout_marginBottom="@dimen/vertical_margin"
+                android:fontFamily="sans-serif"
+                android:text="Siapakah nama pemain sepak bola terkenal indonesia pada gambar diatas?"
+                android:textSize="@dimen/pertanyaan_text_size"
+                android:textStyle="bold"
+                android:typeface="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/quizImage3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
